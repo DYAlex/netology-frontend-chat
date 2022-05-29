@@ -109,7 +109,7 @@
     });
     const userNode = createElement('div', {
       className: 'chat-message__user',
-      textContent: username
+      textContent: username + ':'
     });
     const textNode = createElement('div', {
       className: 'chat-message__text',
@@ -152,7 +152,7 @@
         messages,
         container
       });
-    }, 5000);
+    }, 3000);
   };
 
   const onload = callback => {
